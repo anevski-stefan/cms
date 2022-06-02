@@ -3,6 +3,12 @@
 
 <?php
 
+    $msg = "My first email directly from my website which is online!\nSecond line of text";
+    
+    $msg = wordwrap($msg, 70);
+
+    mail("anevskistefan84@gmail.com", "My subject", $msg);
+
     if(isset($_POST['submit'])){
         $to = "anevskistefan84@gmail.com";
         $subject = $_POST['subject'];
